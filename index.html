@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <!-- ===========================Start MAIN AREA======================= -->
+     <main id="site">
+
+        <!-- ===========================Start Header div AREA======================= -->
+        <header id="header">
+            <h1 class="head-h1"> Simple, traffic-based pricing</h1>
+            <span class="head-span">Sign-up for our 30-day trial. No credit card required.</span>
+        </header>
+        <!-- ===========================End Header div AREA======================= -->   
+        <!-- ===========================Start Info div AREA======================= -->  
+        
+        <div id="info">
+            <div class="info1">
+                <p id="page">100k<span class="page-span">Pageviews</span></p>
+                <h2 class="info1-h2">$<span id="price">16.00</span><sup class="price-sup">/month</sup></h2>
+            </div>
+            <input type="range" name="range" id="range" min="10" max="100" value="50" step="10">
+            <div class="info2">
+                <p class="info2-para">Monthly Billing</p>
+                <label class="switch">
+                    <input type="checkbox" id="select">
+                    <span class="slider"></span>
+                </label>
+                <p class="info2-para">Yearly Billing <span class="info2-span">25% discount</span></p>
+            </div>
+            <hr>
+            <div class="info3">
+                <div class="benefit">
+                    <p class="benefit-p"><img src="./images/icon-check.svg" alt="icon" class="img-p">Unlimited websites</p>
+                    <p class="benefit-p"><img src="./images/icon-check.svg" alt="icon" class="img-p">100% data ownership</p>
+                    <p class="benefit-p"><img src="./images/icon-check.svg" alt="icon" class="img-p">Email reports</p>
+                </div>
+                <button class="btn">Start my trial</button>
+            </div>
+        </div>
+        
+        <!-- ===========================End Info div AREA======================= -->   
+    </main>
+     <!-- ===========================END MAIN AREA======================= -->
+     <div class="bottom-bg"></div>
+    <!-- ================================START FOOTER AREA====================== -->
+    <footer class="foot">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="http://karam-portfolio.liveblog365.com" target="_blank">
+          KARAM SINGH</a
+        >
+      </footer>
+      <!-- ================================END FOOTER AREA========================= -->  
+</body>
+<script src="./script.js"></script>
+</html>

@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    line-height: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width: 1340px;     
+    min-height: 100vh;    
+    background-image: url(./images/bg-pattern.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    font-family: 'Manrope';
+    background-color: hsl(230, 100%, 99%);
+}
+
+/* ======================== Star Main Area ================ */
+
+/* ===========================Start Header div AREA======================= */
+
+#header{
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    background-image: url(./images/pattern-circles.svg);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 70px;
+}
+
+.head-h1{
+    font-size: 2rem;
+    color: hsl(227, 35%, 25%);
+    font-weight: 800;
+    line-height: 3rem;
+    
+}
+
+.head-span{
+    font-size: 1.1rem;
+    color: hsl(225, 20%, 60%);
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+
+}
+
+/* ===========================End Header div AREA======================= */
+
+/* ===========================Start Info div AREA======================= */
+
+#info{
+    width: 700px;
+    background-color: hsl(0, 0%, 100%);
+    margin-left: 30rem;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+#range{
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.info1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page{
+    color: hsl(225, 20%, 60%);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.info1-h2{
+    color: hsl(227, 35%, 25%);
+    font-size: 2.5rem;
+    font-weight: 800;
+
+}
+
+.price-sup{
+    font-size: 1rem;
+    color: hsl(225, 20%, 60%);
+    font-weight: 600;
+}
+
+.info2{
+    display: flex;
+    justify-content:center;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#range{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 10px;
+    background: #d3d3d3;
+    outline: none;
+    border-radius: 20px;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    background: linear-gradient(to right, #82CFD0 0%, #82CFD0 45%, #fff 45%, #fff 100%);    
+}
+
+#range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    border-radius: 100%;
+    padding: 1rem;
+    height: 15px;
+    background: #04AA6D;
+    background-image: url(./images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 4px 4px 4px 4px hsla(174, 86%, 45%, 0.336);
+    cursor: grab;
+}
+
+
+.info2-para{
+    color: hsl(225, 20%, 60%);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.info2-span{
+    background-color: hsl(14, 92%, 95%);
+    border-radius: 20px;
+    padding: 0.2rem 1rem;
+    margin-left: 0.5rem;
+    color: hsl(15, 100%, 70%);
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 24px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch input:hover{
+    background-color: hsl(174, 86%, 45%);
+}
+
+input:checked + .slider {
+    background-color: hsl(174, 86%, 45%);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px hsl(174, 86%, 45%);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider{
+    border-radius: 34px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(224, 65%, 95%);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+hr{
+    margin-top: 3rem;
+}
+
+.info3{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+}
+
+.benefit{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.benefit-p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: hsl(225, 20%, 60%);
+}
+
+.img-p{
+    margin-right: 1rem;
+}
+
+.btn{
+    background-color: hsl(227, 35%, 25%);
+    color: hsl(226, 100%, 87%);
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+/* ===========================End Info div AREA======================= */
+
+/* ======================== End Main Area ================ */
+
+/* ======================== START Footer Area ================ */
+
+.foot {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    color: hsl(35, 77%, 62%);
+    justify-content: center;
+    background-color: hsl(240, 10%, 16%);
+    line-height: 1.5rem;
+    padding: 5px;
+  }
+  
+.foot a {
+    color: hsl(5, 85%, 63%);
+    text-decoration: none;
+}
+
+.foot a:hover{
+    color: white;
+}
+  
+  
+  /* ======================== End Footer Area ================ */
+  
+  /* ======================== Start Media Querry Area ================ */
+@media screen and (max-width:1375px){
+    #info{
+        
+        margin-left: 20rem;
+      
+    }
+} 
+
+@media screen and (max-width:375px){
+    body{
+        min-width: 395px;
+        
+    }
+
+    #header{
+        background-size: cover;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        background-size: auto;
+        background-position-y: 50px;
+    }
+
+    .head-h1{
+        font-size: 1.2rem;
+    }
+
+    .head-span{
+        width: 250px;
+    }
+
+    #info{
+        margin-left: 0rem;
+        width: 360px;
+        padding: 3rem 1rem;
+        margin: 4rem 1rem 0rem 1rem;
+    }
+
+    .info1{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .info1-h2{
+        position: absolute;
+        margin-top: 100px;
+    }
+
+    .info2{
+        width: 100%;
+        margin-top: 8rem;
+        justify-content: none;
+        gap: 0.5rem;
+        
+    }
+
+    .info2-span{
+        margin-left: 0rem;
+    }
+
+    .info2-para{
+        font-size: 0.7rem;
+    }
+
+    .info2-span{
+        visibility: hidden;
+        position: relative;
+    }
+
+    .switch{
+        width: 50px;
+        height: 20px;
+    }
+
+    .switch::before{
+        width: 10px;
+        height: 10px;
+    }
+
+    .info2-span::after{
+        content: "-25%";
+        visibility: visible;
+        position: absolute;
+        background-color: hsl(14, 92%, 95%);
+        border-radius: 20px;
+        padding: 0.2rem 1rem;
+        margin-left: 0.5rem;
+        color: hsl(15, 100%, 70%);
+        left: 0;
+    }
+
+    .info3{
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+  /* ======================== End Media Querry Area ================ */
