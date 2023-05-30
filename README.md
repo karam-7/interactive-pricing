@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:(https://github.com/karam-7//interactive-pricing)
-- Live Site URL:(https://karam-7.github.io//interactive-pricing/)
+- Solution URL:(https://github.com/karam-7/interactive-pricing)
+- Live Site URL:(https://karam-7.github.io/interactive-pricing/)
 
 ## My process
 
